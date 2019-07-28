@@ -4,8 +4,8 @@ function Footer() {
     return (
         <div>
             <div className='row'>
-                <div class='col-md-12'>
-                    <div class='footer p3 mt-4 text-center bg-dark text-light'>
+                <div className='col-md-12'>
+                    <div className='footer p3 mt-4 text-center bg-dark text-light'>
                         Developed By: 
                         <span className='text-warning font-weight-normal'>
                             Ghenet Kibrom
