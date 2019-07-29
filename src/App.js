@@ -1,5 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import {HashRouter as Router} from 'react-router-dom';
 import Navbar from  './components/layout/Navbar';
 import './App.css';
 import Footer from './components/layout/Footer';
@@ -10,11 +11,16 @@ import store from './store';
 function App() {
   return (
     <Provider store={store}> 
-        <Navbar /> 
-        <Landing />
-        <Footer />
+      <Router>
+        <div>
+          <Navbar /> 
+          <Landing />
+          <Footer />
+          </div>
+      </Router>
     </Provider>
   );
 }
 
 export default App;
+
